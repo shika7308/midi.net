@@ -102,6 +102,20 @@ namespace CannedBytes.Midi.Mapper
 
                 throw;
             }
+            sendTest();
+        }
+
+        private void sendTest()
+        {
+            var channel = (byte)(0 | 1 | 2);
+            var noteOn = (byte)(NoteOn | channel);
+
+            var eventData = new MidiData(noteOn);
+            eventData.Parameter1 = 127 / 2;
+            eventData.Parameter2 = 127;
+
+            var note1 = eventData.Data;
+            _outPort.ShortData(eventData.Data);
         }
 
         public void Stop()

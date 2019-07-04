@@ -104,7 +104,7 @@
     <DocumentationFile>bin\Release\CannedBytes.Midi.Message.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>..\..\..\..\..\..\_keyfile\CannedBytes.snk</AssemblyOriginatorKeyFile>
@@ -122,9 +122,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\..\..\..\_AssemblyInfo\AssemblyInfo.General.cs">
-      <Link>Properties\AssemblyInfo.General.cs</Link>
-    </Compile>
     <Compile Include="..\AssemblyInfo.Midi.Net.cs">
       <Link>Properties\AssemblyInfo.Midi.Net.cs</Link>
     </Compile>
