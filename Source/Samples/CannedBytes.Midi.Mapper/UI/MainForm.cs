@@ -321,5 +321,10 @@ namespace CannedBytes.Midi.Mapper.UI
             else
                 Text = "Midi Mapper - [" + Program.Document.FilePath + "]";
         }
+
+        private void MidiInList_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

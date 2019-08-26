@@ -1,7 +1,7 @@
-using System;
-
 namespace CannedBytes.Midi.Message
 {
+    using System;
+
     /// <summary>
     /// Represents a midi real-time (short) message.
     /// </summary>
@@ -18,11 +18,11 @@ namespace CannedBytes.Midi.Message
 
             if (Enum.IsDefined(typeof(MidiSysRealTimeType), Data))
             {
-                RealTimeType = (MidiSysRealTimeType)Enum.ToObject(typeof(MidiSysRealTimeType), Data);
+                this.RealTimeType = (MidiSysRealTimeType)Enum.ToObject(typeof(MidiSysRealTimeType), Data);
             }
             else
             {
-                RealTimeType = MidiSysRealTimeType.Invalid;
+                this.RealTimeType = MidiSysRealTimeType.Invalid;
             }
         }
 
@@ -32,4 +32,3 @@ namespace CannedBytes.Midi.Message
         public MidiSysRealTimeType RealTimeType { get; set; }
     }
 }
-
